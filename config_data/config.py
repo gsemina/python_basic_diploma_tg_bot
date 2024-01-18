@@ -9,8 +9,8 @@ else:
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 RAPID_API_KEY = os.getenv("RAPID_API_KEY")
 DEFAULT_COMMANDS = (
-    ('start", "Запустить бота'),
-    ('help", "Вывести справку'),
+    ('start', 'Запустить бота'),
+    ('help', 'Вывести справку'),
     ('survey', 'Опрос'),
     ('lowprice', "Вывод самых дешёвых отелей в городе"),
     ('highprice', "Вывод самых дорогих отелей в городе"),
