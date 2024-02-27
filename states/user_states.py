@@ -2,6 +2,7 @@ from telebot.handler_backends import State, StatesGroup
 
 
 class UserInputState(StatesGroup):
+    """Класс состояния пользователя"""
     command = State()  # команда, которую выбрал пользователь
     input_city = State()  # город, который ввел пользователь
     destinationId = State()  # запись id города
@@ -10,8 +11,8 @@ class UserInputState(StatesGroup):
     input_date = State()  # ввод даты (заезда, выезда)
     priceMin = State()  # минимальная стоимость отеля
     priceMax = State()  # максимальная стоимость отеля
-    landmarkIn = State()  # начало диапазона расстояния от центра
-    landmarkOut = State()  # конец диапазона расстояния от центра
+    start_distance_to_center = State()  # начало диапазона расстояния от центра
+    end_distance_to_center = State()  # конец диапазона расстояния от центра
     history_select = State()  # выбор истории поиска
 
 
